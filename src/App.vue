@@ -6,7 +6,6 @@ export default {
     return {};
   },
   components: {
-    AppProjectGrid,
     AppHeader,
   },
   props: {},
@@ -18,7 +17,7 @@ export default {
 <template>
   <AppHeader />
   <main>
-    <AppProjectGrid />
+    <router-view></router-view>
   </main>
 </template>
 
