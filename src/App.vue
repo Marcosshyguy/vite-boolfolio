@@ -1,12 +1,13 @@
 <script>
 import AppProjectGrid from "./components/AppProjectGrid.vue";
-
+import AppHeader from "./partials/AppHeader.vue";
 export default {
   data() {
     return {};
   },
   components: {
     AppProjectGrid,
+    AppHeader,
   },
   props: {},
   methods: {},
@@ -15,6 +16,7 @@ export default {
 </script>
 
 <template>
+  <AppHeader />
   <main>
     <AppProjectGrid />
   </main>
