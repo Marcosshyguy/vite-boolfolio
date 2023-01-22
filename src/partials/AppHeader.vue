@@ -26,18 +26,23 @@ export default {
         <ul
           class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
         >
-          <!-- <li>
-            <router-link href="#" class="nav-link px-2 text-white"
-              >Progetti</router-link
+          <li>
+            <router-link
+              :to="{ name: 'project' }"
+              class="nav-link px-2 text-white"
+              aria-current="page"
             >
-          </li> -->
+              Progetti</router-link
+            >
+          </li>
           <li>
             <router-link
               :to="{ name: 'curriculum' }"
               class="nav-link px-2"
               aria-current="page"
-              :class="{ name: 'curriculum' } ? 'text-white' : ''"
+              :class="{ name: 'curriculum' } ? 'text-white' : 'text-dark'"
             >
+              <!-- @click="goToCurriculum" -->
               Curriculum</router-link
             >
           </li>
