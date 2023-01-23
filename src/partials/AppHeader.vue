@@ -29,8 +29,9 @@ export default {
           <li>
             <router-link
               :to="{ name: 'project' }"
-              class="nav-link px-2 text-white"
+              class="nav-link px-2"
               aria-current="page"
+              :class="$route.name === 'project' ? 'text-white' : 'text-success'"
             >
               Progetti</router-link
             >
@@ -40,7 +41,9 @@ export default {
               :to="{ name: 'curriculum' }"
               class="nav-link px-2"
               aria-current="page"
-              :class="{ name: 'curriculum' } ? 'text-white' : 'text-dark'"
+              :class="
+                $route.name === 'curriculum' ? 'text-white' : 'text-success'
+              "
             >
               <!-- @click="goToCurriculum" -->
               Curriculum</router-link
@@ -61,4 +64,4 @@ export default {
   </header>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss" scoped></style>
