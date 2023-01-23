@@ -53,7 +53,14 @@ export default {
         {{ element.type ? element.type.project_type : "Nessuna tipologia" }}
       </p>
 
-      <a href="#" class="btn btn-primary">Mostra</a>
+      <router-link
+        :to="{
+          name: 'single-project-details',
+          params: { slug: element.slug },
+        }"
+        class="btn btn-primary"
+        >Mostra</router-link
+      >
     </div>
   </div>
 </template>
